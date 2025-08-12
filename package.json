@@ -1,0 +1,27 @@
+{
+  "name": "blockchain-template",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "web3/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter @apps/web dev",
+    "dev:indexer": "pnpm --filter @apps/indexer ponder",
+    "test:evm": "pnpm --filter @web3/evm test",
+    "compile:evm": "pnpm --filter @web3/evm compile",
+    "deploy:evm": "pnpm --filter @web3/evm deploy",
+    "verify:evm": "pnpm --filter @web3/evm verify",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.6.2",
+    "eslint": "^9.9.0"
+  }
+}

@@ -46,10 +46,22 @@ yarn-error.log*
 
 # Ponder
 /generated/
-*/.ponder
+**/.ponder
 
 # Hardhat
-*/artifacts/
-*/cache/
+**/artifacts/
+**/cache/
 
-*/temporary/
+**/temporary/
+
+
+# TypeChain files
+**/typechain
+**/typechain-types
+
+# solidity-coverage files
+**/coverage
+**/coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+**/ignition/deployments/chain-31337
