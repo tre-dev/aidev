@@ -6,7 +6,8 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "deploy": "hardhat ignition deploy",
-    "verify": "hardhat verify"
+    "verify": "hardhat verify",
+    "typecheck": "hardhat compile && tsc --noEmit"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^0.15.13",

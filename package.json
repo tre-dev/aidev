@@ -7,6 +7,7 @@
     "packages/*",
     "web3/*"
   ],
+  "packageManager": "pnpm@10.14.0",
   "scripts": {
     "dev:web": "pnpm --filter @apps/web dev",
     "dev:indexer": "pnpm --filter @apps/indexer ponder",
